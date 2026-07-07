@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bio-profile
+    runtime: static
+    buildCommand: echo "Static site - no build step needed"
+    staticPublishPath: .
+    autoDeployTrigger: commit
+    previews:
+      generation: automatic
